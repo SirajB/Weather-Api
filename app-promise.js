@@ -30,7 +30,7 @@ var lng = response.data.results[0].geometry.location.lng;
 }).then((response) =>{
     var temperature = response.data.currently.temperature;
     var apparentTemperature = response.data.currently.apparentTemperature;
-    console.log(`It is currently ${temperature}. It feels like ${apparentTemperature}.`);
+    console.log(`It is currently ${temperature}. It feels like ${apparentTemperature}.`+'\n'+`This would be ${Math.round((((temperature-32)*5)/9)*100)/100} degrees Celsius. Which would feel like ${Math.round((((apparentTemperature-32)*5)/9)*100)/100} degrees Cel`);
 }).catch((e) => {
    if (e.code === 'ENOTFOUND'){
        console.log('Unable to connect to API servers.')
