@@ -9,8 +9,8 @@ Alternitively run with nodemon:
 nodemon app.js -a ["Address City"] or [Postcode/Zipcode]
 
 Dependancies used:
-nodemon
-yargs
-axios
-request
+nodemon;
+yargs;
+axios;
+request.
 
