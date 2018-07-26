@@ -41,7 +41,7 @@ axios.get(geocodeUrl).then((response) => {
     `It is currently ${temperature}. 
 It feels like ${apparentTemperature}.
 This would be ${farenheightToCelsius(temperature)} degrees Celsius.
-Which would feel like ${farenheightToCelsius(apparentTemperature)} degrees Cel`,
+Which would feel like ${farenheightToCelsius(apparentTemperature)} degrees Celsius`,
   );
 }).catch((e) => {
   if (e.code === 'ENOTFOUND') {
