@@ -7,3 +7,10 @@ node app.js -a ["Address City"] or [Postcode/Zipcode]
 
 Alternitively run with nodemon:
 nodemon app.js -a ["Address City"] or [Postcode/Zipcode]
+
+Dependancies used:
+nodemon
+yargs
+axios
+request
+
