@@ -15,7 +15,8 @@ const argv = yargs
   .argv;
 
 const encodedAddress = encodeURIComponent(argv.address);
-const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=AIzaSyCwn-SI7Qi2DfGp77DhirijUp0tlSLqM_c`;
+const geocodeKey = '********************************'
+const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=${geocodeKey}`;
 
 
 function farenheightToCelsius(temperature) {
